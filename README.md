@@ -2,7 +2,7 @@
 **1. Pasos para crear un repositorio:**
 ```
   A. Primero se crea un token en GitHub
-  B. Segundo en Xcode > Preferences > Accounts > (+) GitHut Account
+  B. Segundo en Xcode > Preferences > Accounts > (+) GitHub Account
   C. Tercero crear proyecto:
         Team:                     None
         Organization Identifier:  GabrielToroG
@@ -27,7 +27,7 @@
         Extensions  ->  Extensiones a elementos ya conocidos (String, UIImage, etc.)
         Helpers     ->  Funciones que NO van en View, Model, ViewModel
     B. Luego:
-        se arrastro el archivo Assets a la carpeta Assets
+        se arrastra el archivo Assets a la carpeta Assets
         se arrastra el LaunchScreen a la carpeta View
     C. Finalmente:
         Se crea una carpeta llamada main en la carpeta View y aqui se arrastra el Storyboard y el ViewController inicial
