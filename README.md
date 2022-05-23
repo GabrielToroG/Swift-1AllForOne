@@ -25,7 +25,7 @@
         ViewModel
         Assets      ->  imagenes, lotties, localazy
         Extensions  ->  Extensiones a elementos ya conocidos (String, UIImage, etc.)
-        Helpers     ->  Funciones que NO van en View, Model, ViewModel
+        Helpers     ->  Funciones que NO van en View, Model, ViewModel y que usan más de una vez
     B. Luego:
         se arrastra el archivo Assets a la carpeta Assets
         se arrastra el LaunchScreen a la carpeta View
