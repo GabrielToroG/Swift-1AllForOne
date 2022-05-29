@@ -19,8 +19,8 @@ class MainViewController: UIViewController {
     //Se crea un arreglo
     var cellsArray = [
         ["title": "Mandar data", "icon": "ic_main_send_data"],
-//        ["title": "Mandar data", "icon": "1"],
-//        ["title": "Mandar data", "icon": "1"],
+        ["title": "XDD", "icon": "ic_main_send_data"],
+        ["title": "Carrusel", "icon": "ic_main_carousel"],
 //        ["title": "Mandar data", "icon": "1"]
     ]
     
@@ -84,10 +84,10 @@ extension MainViewController: UITableViewDelegate{
         switch indexPath.row{
         case 0:
             performSegue(withIdentifier: "goToSendDataFromMain", sender: self)
-//        case 1:
-//            performSegue(withIdentifier: "goToCarouselFromMain", sender: self)
-//        case 2:
-//            performSegue(withIdentifier: "goToCalendarFromMain", sender: self)
+        case 1:
+            performSegue(withIdentifier: "goToTestingFromMain", sender: self)
+        case 2:
+            performSegue(withIdentifier: "goToCarouselFromMain", sender: self)
 //        case 3:
 //            performSegue(withIdentifier: "goToCamaraFromMain", sender: self)
         default:

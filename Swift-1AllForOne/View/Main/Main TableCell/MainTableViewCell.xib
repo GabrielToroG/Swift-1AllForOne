@@ -24,7 +24,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mdc-Kf-KYL">
-                        <rect key="frame" x="49" y="12" width="33" height="20.5"/>
+                        <rect key="frame" x="53" y="12" width="33" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -33,7 +33,7 @@
                 <constraints>
                     <constraint firstItem="Mdc-Kf-KYL" firstAttribute="centerY" secondItem="DZq-eA-HbH" secondAttribute="centerY" id="CvX-Ho-ZWY"/>
                     <constraint firstItem="DZq-eA-HbH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Pgp-sO-cRk"/>
-                    <constraint firstItem="Mdc-Kf-KYL" firstAttribute="leading" secondItem="DZq-eA-HbH" secondAttribute="trailing" constant="8" id="eTI-aJ-fcS"/>
+                    <constraint firstItem="Mdc-Kf-KYL" firstAttribute="leading" secondItem="DZq-eA-HbH" secondAttribute="trailing" constant="12" id="eTI-aJ-fcS"/>
                     <constraint firstItem="DZq-eA-HbH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oNk-e4-ySM"/>
                 </constraints>
             </tableViewCellContentView>

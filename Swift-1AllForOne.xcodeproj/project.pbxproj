@@ -12,6 +12,10 @@
 		4C526CA02835F0C500846004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C526C9E2835F0C500846004 /* Main.storyboard */; };
 		4C526CA22835F0C600846004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C526CA12835F0C600846004 /* Assets.xcassets */; };
 		4C526CA52835F0C600846004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C526CA32835F0C600846004 /* LaunchScreen.storyboard */; };
+		4C82117E28408D1F00C7B2D5 /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C82117D28408D1F00C7B2D5 /* TestingViewController.swift */; };
+		4C82118028408ED900C7B2D5 /* TestingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C82117F28408ED900C7B2D5 /* TestingTableViewCell.swift */; };
+		4C821183284094D800C7B2D5 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C821182284094D800C7B2D5 /* CarouselViewController.swift */; };
+		4C82118528409D9900C7B2D5 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C82118428409D9900C7B2D5 /* CarouselCollectionViewCell.swift */; };
 		4C9C68A92835FC5F007C39A5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9C68A82835FC5F007C39A5 /* MainViewController.swift */; };
 		4CAD25402836A96E002B447A /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAD253E2836A96E002B447A /* MainTableViewCell.swift */; };
 		4CAD25412836A96E002B447A /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CAD253F2836A96E002B447A /* MainTableViewCell.xib */; };
@@ -26,6 +30,10 @@
 		4C526CA12835F0C600846004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C526CA42835F0C600846004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C526CA62835F0C600846004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C82117D28408D1F00C7B2D5 /* TestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
+		4C82117F28408ED900C7B2D5 /* TestingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingTableViewCell.swift; sourceTree = "<group>"; };
+		4C821182284094D800C7B2D5 /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
+		4C82118428409D9900C7B2D5 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 		4C9C68A82835FC5F007C39A5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4CAD253E2836A96E002B447A /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		4CAD253F2836A96E002B447A /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
@@ -75,11 +83,31 @@
 			path = "Swift-1AllForOne";
 			sourceTree = "<group>";
 		};
+		4C82117C28408D0600C7B2D5 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				4C82117D28408D1F00C7B2D5 /* TestingViewController.swift */,
+				4C82117F28408ED900C7B2D5 /* TestingTableViewCell.swift */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
+		4C821181284094C500C7B2D5 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				4C821182284094D800C7B2D5 /* CarouselViewController.swift */,
+				4C82118428409D9900C7B2D5 /* CarouselCollectionViewCell.swift */,
+			);
+			path = Carousel;
+			sourceTree = "<group>";
+		};
 		4C9C68A42835FADB007C39A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4C821181284094C500C7B2D5 /* Carousel */,
 				4C9C68A72835FAFB007C39A5 /* Main */,
 				4CC73F7F283B4F64004A6EC1 /* SendData */,
+				4C82117C28408D0600C7B2D5 /* Testing */,
 				4C526CA32835F0C600846004 /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -223,6 +251,10 @@
 				4C9C68A92835FC5F007C39A5 /* MainViewController.swift in Sources */,
 				4C526C992835F0C500846004 /* AppDelegate.swift in Sources */,
 				4CAD25402836A96E002B447A /* MainTableViewCell.swift in Sources */,
+				4C82118028408ED900C7B2D5 /* TestingTableViewCell.swift in Sources */,
+				4C82118528409D9900C7B2D5 /* CarouselCollectionViewCell.swift in Sources */,
+				4C821183284094D800C7B2D5 /* CarouselViewController.swift in Sources */,
+				4C82117E28408D1F00C7B2D5 /* TestingViewController.swift in Sources */,
 				4C526C9B2835F0C500846004 /* SceneDelegate.swift in Sources */,
 				4CC73F81283B4F88004A6EC1 /* SendDataViewController.swift in Sources */,
 			);
