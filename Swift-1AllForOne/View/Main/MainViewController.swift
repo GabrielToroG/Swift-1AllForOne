@@ -7,7 +7,7 @@
 
 import UIKit
 
-//MARK: 1 MainViewController
+//MARK: - 1 MainViewController
 class MainViewController: UIViewController {
 
     
@@ -18,29 +18,25 @@ class MainViewController: UIViewController {
     //MARK: 1.2 Variables
     //Se crea un arreglo
     var cellsArray = [
-        ["title": "Mandar data", "icon": "ic_main_send_data"],
-        ["title": "XDD", "icon": "ic_main_send_data"],
+        ["title": "Mandar información por pantalla", "icon": "ic_main_send_data"],
+        ["title": "Pantallas inteligentes", "icon": "ic_main_smart_screens"],
         ["title": "Carrusel", "icon": "ic_main_carousel"],
-//        ["title": "Mandar data", "icon": "1"]
     ]
     
     
     //MARK: 1.3 Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
         loadViews()
-        // Do any additional setup after loading the view.
     }
     
     
     //MARK: 1.5 UI Functions
     func loadViews(){
         //Table View
-        let nib = UINib(nibName: "MainTableViewCell", bundle: nil)
-        navegationTableView.register(nib, forCellReuseIdentifier: "MainTableViewCell")
+        navegationTableView.rowHeight = 44      //Fija la altura de la celda a la de default
         navegationTableView.dataSource = self   //Indica los elementos que tendrá la tabla
-        navegationTableView.delegate = self  //Indica las acciones de cada celda
+        navegationTableView.delegate = self     //Indica las acciones de cada celda
     }
     
     
@@ -66,8 +62,8 @@ extension MainViewController: UITableViewDataSource{
     //B. Función que establece cual es el contenido de cada una de las celdas
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = navegationTableView.dequeueReusableCell(withIdentifier: "MainTableViewCell", for: indexPath) as! MainTableViewCell
-        cell.titleLabel.text = cellsArray[indexPath.row]["title"]!
-        cell.iconImage.image = UIImage(named: cellsArray[indexPath.row]["icon"]!)
+        cell.tableName.text = cellsArray[indexPath.row]["title"]!
+        cell.tableIcon.image = UIImage(named: cellsArray[indexPath.row]["icon"]!)
         cell.accessoryType = .disclosureIndicator
         return cell
     }
@@ -85,7 +81,7 @@ extension MainViewController: UITableViewDelegate{
         case 0:
             performSegue(withIdentifier: "goToSendDataFromMain", sender: self)
         case 1:
-            performSegue(withIdentifier: "goToTestingFromMain", sender: self)
+            performSegue(withIdentifier: "goToSmartScreensFromMain", sender: self)
         case 2:
             performSegue(withIdentifier: "goToCarouselFromMain", sender: self)
 //        case 3:

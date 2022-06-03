@@ -52,5 +52,15 @@ class CarouselCollectionViewCell: UICollectionViewCell {
         slideButton.layer.shadowOffset = CGSize(width: 0, height: 4)
         slideButton.layer.shadowOpacity = 1
         slideButton.layer.shadowRadius = 4
+        
+        
+        
+        let gradient = CAGradientLayer()
+        gradient.colors =  [UIColor.systemBlue.cgColor, UIColor.systemGreen.cgColor]
+        gradient.locations = [0.0, 1.0]
+        gradient.startPoint = CGPoint(x: 0.0, y: 0.0)
+        gradient.endPoint = CGPoint(x: 0.0, y: 1.0)
+        gradient.frame = CGRect(x: 0.0, y: 0.0, width: self.frame.size.width , height: self.frame.size.height)
+        self.layer.insertSublayer(gradient, at: 0)
     }
 }

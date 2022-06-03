@@ -17,9 +17,10 @@
 		4C821183284094D800C7B2D5 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C821182284094D800C7B2D5 /* CarouselViewController.swift */; };
 		4C82118528409D9900C7B2D5 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C82118428409D9900C7B2D5 /* CarouselCollectionViewCell.swift */; };
 		4C9C68A92835FC5F007C39A5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9C68A82835FC5F007C39A5 /* MainViewController.swift */; };
-		4CAD25402836A96E002B447A /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAD253E2836A96E002B447A /* MainTableViewCell.swift */; };
-		4CAD25412836A96E002B447A /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CAD253F2836A96E002B447A /* MainTableViewCell.xib */; };
+		4CA127EC28431E7E005CCF60 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA127EB28431E7E005CCF60 /* MainTableViewCell.swift */; };
 		4CC73F81283B4F88004A6EC1 /* SendDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC73F80283B4F88004A6EC1 /* SendDataViewController.swift */; };
+		4CC9E3322844252D002CA36E /* SmartScreensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9E3312844252D002CA36E /* SmartScreensViewController.swift */; };
+		4CC9E33428442C93002CA36E /* SmartScreens2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9E33328442C93002CA36E /* SmartScreens2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +36,10 @@
 		4C821182284094D800C7B2D5 /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
 		4C82118428409D9900C7B2D5 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 		4C9C68A82835FC5F007C39A5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		4CAD253E2836A96E002B447A /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
-		4CAD253F2836A96E002B447A /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		4CA127EB28431E7E005CCF60 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		4CC73F80283B4F88004A6EC1 /* SendDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDataViewController.swift; sourceTree = "<group>"; };
+		4CC9E3312844252D002CA36E /* SmartScreensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartScreensViewController.swift; sourceTree = "<group>"; };
+		4CC9E33328442C93002CA36E /* SmartScreens2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartScreens2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +106,10 @@
 		4C9C68A42835FADB007C39A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4C821181284094C500C7B2D5 /* Carousel */,
 				4C9C68A72835FAFB007C39A5 /* Main */,
 				4CC73F7F283B4F64004A6EC1 /* SendData */,
+				4CC9E33028442054002CA36E /* SmartScreens */,
+				4C821181284094C500C7B2D5 /* Carousel */,
 				4C82117C28408D0600C7B2D5 /* Testing */,
 				4C526CA32835F0C600846004 /* LaunchScreen.storyboard */,
 			);
@@ -130,9 +133,9 @@
 		4C9C68A72835FAFB007C39A5 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				4CAD253D2836A943002B447A /* Main TableCell */,
 				4C526C9E2835F0C500846004 /* Main.storyboard */,
 				4C9C68A82835FC5F007C39A5 /* MainViewController.swift */,
+				4CA127EB28431E7E005CCF60 /* MainTableViewCell.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -159,21 +162,21 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		4CAD253D2836A943002B447A /* Main TableCell */ = {
-			isa = PBXGroup;
-			children = (
-				4CAD253E2836A96E002B447A /* MainTableViewCell.swift */,
-				4CAD253F2836A96E002B447A /* MainTableViewCell.xib */,
-			);
-			path = "Main TableCell";
-			sourceTree = "<group>";
-		};
 		4CC73F7F283B4F64004A6EC1 /* SendData */ = {
 			isa = PBXGroup;
 			children = (
 				4CC73F80283B4F88004A6EC1 /* SendDataViewController.swift */,
 			);
 			path = SendData;
+			sourceTree = "<group>";
+		};
+		4CC9E33028442054002CA36E /* SmartScreens */ = {
+			isa = PBXGroup;
+			children = (
+				4CC9E3312844252D002CA36E /* SmartScreensViewController.swift */,
+				4CC9E33328442C93002CA36E /* SmartScreens2ViewController.swift */,
+			);
+			path = SmartScreens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +239,6 @@
 			files = (
 				4C526CA52835F0C600846004 /* LaunchScreen.storyboard in Resources */,
 				4C526CA22835F0C600846004 /* Assets.xcassets in Resources */,
-				4CAD25412836A96E002B447A /* MainTableViewCell.xib in Resources */,
 				4C526CA02835F0C500846004 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,9 +251,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C9C68A92835FC5F007C39A5 /* MainViewController.swift in Sources */,
+				4CA127EC28431E7E005CCF60 /* MainTableViewCell.swift in Sources */,
 				4C526C992835F0C500846004 /* AppDelegate.swift in Sources */,
-				4CAD25402836A96E002B447A /* MainTableViewCell.swift in Sources */,
 				4C82118028408ED900C7B2D5 /* TestingTableViewCell.swift in Sources */,
+				4CC9E3322844252D002CA36E /* SmartScreensViewController.swift in Sources */,
+				4CC9E33428442C93002CA36E /* SmartScreens2ViewController.swift in Sources */,
 				4C82118528409D9900C7B2D5 /* CarouselCollectionViewCell.swift in Sources */,
 				4C821183284094D800C7B2D5 /* CarouselViewController.swift in Sources */,
 				4C82117E28408D1F00C7B2D5 /* TestingViewController.swift in Sources */,

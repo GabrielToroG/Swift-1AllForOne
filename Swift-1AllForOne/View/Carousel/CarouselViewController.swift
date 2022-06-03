@@ -41,6 +41,18 @@ class CarouselViewController: UIViewController {
         loadViews()
     }
     
+//    override func viewWillLayoutSubviews() {
+//        super.viewWillLayoutSubviews()
+//
+//        let gradient = CAGradientLayer()
+//        gradient.colors =  [UIColor.systemBlue.cgColor, UIColor.systemGreen.cgColor]
+//        gradient.locations = [0.0, 1.0]
+//        gradient.startPoint = CGPoint(x: 0.0, y: 0.0)
+//        gradient.endPoint = CGPoint(x: 0.0, y: 1.0)
+//        gradient.frame = CGRect(x: 0.0, y: 0.0, width: carouselCollectionView.frame.size.width , height: carouselCollectionView.frame.size.height)
+//        carouselCollectionView.layer.insertSublayer(gradient, at: 0)
+//        self.view.layer.insertSublayer(gradient, at: 0)
+//    }
 
     //MARK: 1.5 UI Functions
     //A. Función que carga las vistas
