@@ -7,10 +7,14 @@
 
 import UIKit
 
-class SendDataBack2TableViewCell: UITableViewCell {
+class SendColorTableViewCell: UITableViewCell {
+    
+    // MARK: - Outlets
     @IBOutlet weak var colorView: UIView!
     @IBOutlet weak var colorLabel: UILabel!
     
+    
+    // MARK: - Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
     }

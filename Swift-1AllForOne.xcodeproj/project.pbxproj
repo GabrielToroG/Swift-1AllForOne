@@ -25,8 +25,8 @@
 		4CA791FB287D6C5A0078EF7A /* RecieveColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA791FA287D6C5A0078EF7A /* RecieveColorViewController.swift */; };
 		4CA791FD287D6D2D0078EF7A /* ColorStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA791FC287D6D2D0078EF7A /* ColorStruct.swift */; };
 		4CAE0764287D3A6500608927 /* SendDataBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE0763287D3A6500608927 /* SendDataBackViewController.swift */; };
-		4CAE0766287D401400608927 /* SendDataBack2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE0765287D401400608927 /* SendDataBack2ViewController.swift */; };
-		4CAE0768287D42F700608927 /* SendDataBack2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE0767287D42F700608927 /* SendDataBack2TableViewCell.swift */; };
+		4CAE0766287D401400608927 /* SendColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE0765287D401400608927 /* SendColorViewController.swift */; };
+		4CAE0768287D42F700608927 /* SendColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE0767287D42F700608927 /* SendColorTableViewCell.swift */; };
 		4CC73F81283B4F88004A6EC1 /* SendDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC73F80283B4F88004A6EC1 /* SendDataViewController.swift */; };
 		4CC9E3322844252D002CA36E /* SmartScreensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9E3312844252D002CA36E /* SmartScreensViewController.swift */; };
 		4CC9E33428442C93002CA36E /* SmartScreens2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9E33328442C93002CA36E /* SmartScreens2ViewController.swift */; };
@@ -55,8 +55,8 @@
 		4CA791FA287D6C5A0078EF7A /* RecieveColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieveColorViewController.swift; sourceTree = "<group>"; };
 		4CA791FC287D6D2D0078EF7A /* ColorStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorStruct.swift; sourceTree = "<group>"; };
 		4CAE0763287D3A6500608927 /* SendDataBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDataBackViewController.swift; sourceTree = "<group>"; };
-		4CAE0765287D401400608927 /* SendDataBack2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDataBack2ViewController.swift; sourceTree = "<group>"; };
-		4CAE0767287D42F700608927 /* SendDataBack2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDataBack2TableViewCell.swift; sourceTree = "<group>"; };
+		4CAE0765287D401400608927 /* SendColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendColorViewController.swift; sourceTree = "<group>"; };
+		4CAE0767287D42F700608927 /* SendColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendColorTableViewCell.swift; sourceTree = "<group>"; };
 		4CC73F80283B4F88004A6EC1 /* SendDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDataViewController.swift; sourceTree = "<group>"; };
 		4CC9E3312844252D002CA36E /* SmartScreensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartScreensViewController.swift; sourceTree = "<group>"; };
 		4CC9E33328442C93002CA36E /* SmartScreens2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartScreens2ViewController.swift; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 			children = (
 				4C9C68A72835FAFB007C39A5 /* Main */,
 				4CC73F7F283B4F64004A6EC1 /* SendData */,
-				4CAE0762287D39ED00608927 /* SendDataBackwards */,
+				4CAE0762287D39ED00608927 /* SendDataBack */,
 				4CC9E33028442054002CA36E /* SmartScreens */,
 				4C821181284094C500C7B2D5 /* Carousel */,
 				4C8BD5D8284ACE9A0045705F /* APIConnection */,
@@ -198,14 +198,14 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		4CAE0762287D39ED00608927 /* SendDataBackwards */ = {
+		4CAE0762287D39ED00608927 /* SendDataBack */ = {
 			isa = PBXGroup;
 			children = (
 				4CAE0763287D3A6500608927 /* SendDataBackViewController.swift */,
-				4CAE0765287D401400608927 /* SendDataBack2ViewController.swift */,
-				4CAE0767287D42F700608927 /* SendDataBack2TableViewCell.swift */,
+				4CAE0765287D401400608927 /* SendColorViewController.swift */,
+				4CAE0767287D42F700608927 /* SendColorTableViewCell.swift */,
 			);
-			path = SendDataBackwards;
+			path = SendDataBack;
 			sourceTree = "<group>";
 		};
 		4CC73F7F283B4F64004A6EC1 /* SendData */ = {
@@ -312,7 +312,7 @@
 				4CDFDF772851204600A68A77 /* ModalViewController.swift in Sources */,
 				4C8BD5D7284AC4DF0045705F /* Crypto.swift in Sources */,
 				4C9C68A92835FC5F007C39A5 /* MainViewController.swift in Sources */,
-				4CAE0766287D401400608927 /* SendDataBack2ViewController.swift in Sources */,
+				4CAE0766287D401400608927 /* SendColorViewController.swift in Sources */,
 				4CA127EC28431E7E005CCF60 /* MainTableViewCell.swift in Sources */,
 				4C526C992835F0C500846004 /* AppDelegate.swift in Sources */,
 				4C82118028408ED900C7B2D5 /* TestingTableViewCell.swift in Sources */,
@@ -323,7 +323,7 @@
 				4CA791FB287D6C5A0078EF7A /* RecieveColorViewController.swift in Sources */,
 				4C82118528409D9900C7B2D5 /* CarouselCollectionViewCell.swift in Sources */,
 				4C8BD5DC284DB2DD0045705F /* APIConnectionViewModel.swift in Sources */,
-				4CAE0768287D42F700608927 /* SendDataBack2TableViewCell.swift in Sources */,
+				4CAE0768287D42F700608927 /* SendColorTableViewCell.swift in Sources */,
 				4CAE0764287D3A6500608927 /* SendDataBackViewController.swift in Sources */,
 				4C821183284094D800C7B2D5 /* CarouselViewController.swift in Sources */,
 				4C82117E28408D1F00C7B2D5 /* TestingViewController.swift in Sources */,

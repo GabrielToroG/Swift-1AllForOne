@@ -311,7 +311,7 @@
         <!--Colores-->
         <scene sceneID="8pW-cB-W8z">
             <objects>
-                <viewController id="fur-qp-SLu" customClass="SendDataBack2ViewController" customModule="Swift_1AllForOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fur-qp-SLu" customClass="SendColorViewController" customModule="Swift_1AllForOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sXF-De-oCH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -323,7 +323,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="320"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SendDataBack2TableViewCell" id="WTi-UU-fKb" customClass="SendDataBack2TableViewCell" customModule="Swift_1AllForOne" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SendColorTableViewCell" id="WTi-UU-fKb" customClass="SendColorTableViewCell" customModule="Swift_1AllForOne" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="44.5" width="382" height="70"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WTi-UU-fKb" id="ezD-dJ-CiA">
