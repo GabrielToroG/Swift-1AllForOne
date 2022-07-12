@@ -18,9 +18,12 @@ class MainViewController: UIViewController {
     //MARK: 1.2 Variables
     //Se crea un arreglo
     var cellsArray = [
-        ["title": "Mandar información por pantalla", "icon": "ic_main_send_data"],
+        ["title": "Mandar información hacia adelante", "icon": "ic_main_send_data"],
+        ["title": "Mandar información hacia atrás", "icon": "ic_main_send_data"],
         ["title": "Pantallas inteligentes", "icon": "ic_main_smart_screens"],
         ["title": "Carrusel", "icon": "ic_main_carousel"],
+        ["title": "Conexión API", "icon": "ic_main_api"],
+        ["title": "Modal", "icon": "ic_main_modal"],
     ]
     
     
@@ -81,11 +84,15 @@ extension MainViewController: UITableViewDelegate{
         case 0:
             performSegue(withIdentifier: "goToSendDataFromMain", sender: self)
         case 1:
-            performSegue(withIdentifier: "goToSmartScreensFromMain", sender: self)
+            performSegue(withIdentifier: "goToSendDataBackFromMain", sender: self)
         case 2:
+            performSegue(withIdentifier: "goToSmartScreensFromMain", sender: self)
+        case 3:
             performSegue(withIdentifier: "goToCarouselFromMain", sender: self)
-//        case 3:
-//            performSegue(withIdentifier: "goToCamaraFromMain", sender: self)
+        case 4:
+            performSegue(withIdentifier: "goToCryptoFromMain", sender: self)
+        case 5:
+            performSegue(withIdentifier: "goToModalFromMain", sender: self)
         default:
             print("hola")
         }

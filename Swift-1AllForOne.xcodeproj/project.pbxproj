@@ -16,11 +16,19 @@
 		4C82118028408ED900C7B2D5 /* TestingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C82117F28408ED900C7B2D5 /* TestingTableViewCell.swift */; };
 		4C821183284094D800C7B2D5 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C821182284094D800C7B2D5 /* CarouselViewController.swift */; };
 		4C82118528409D9900C7B2D5 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C82118428409D9900C7B2D5 /* CarouselCollectionViewCell.swift */; };
+		4C8BD5D7284AC4DF0045705F /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8BD5D6284AC4DF0045705F /* Crypto.swift */; };
+		4C8BD5DA284ACF040045705F /*  APIConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8BD5D9284ACF040045705F /*  APIConnectionViewController.swift */; };
+		4C8BD5DC284DB2DD0045705F /* APIConnectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8BD5DB284DB2DD0045705F /* APIConnectionViewModel.swift */; };
 		4C9C68A92835FC5F007C39A5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9C68A82835FC5F007C39A5 /* MainViewController.swift */; };
 		4CA127EC28431E7E005CCF60 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA127EB28431E7E005CCF60 /* MainTableViewCell.swift */; };
+		4CAE0764287D3A6500608927 /* SendDataBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE0763287D3A6500608927 /* SendDataBackViewController.swift */; };
+		4CAE0766287D401400608927 /* SendDataBack2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE0765287D401400608927 /* SendDataBack2ViewController.swift */; };
+		4CAE0768287D42F700608927 /* SendDataBack2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE0767287D42F700608927 /* SendDataBack2TableViewCell.swift */; };
 		4CC73F81283B4F88004A6EC1 /* SendDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC73F80283B4F88004A6EC1 /* SendDataViewController.swift */; };
 		4CC9E3322844252D002CA36E /* SmartScreensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9E3312844252D002CA36E /* SmartScreensViewController.swift */; };
 		4CC9E33428442C93002CA36E /* SmartScreens2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9E33328442C93002CA36E /* SmartScreens2ViewController.swift */; };
+		4CDFDF772851204600A68A77 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDFDF762851204600A68A77 /* ModalViewController.swift */; };
+		4CDFDF7928512DCE00A68A77 /* PopUpWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDFDF7828512DCE00A68A77 /* PopUpWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,11 +43,19 @@
 		4C82117F28408ED900C7B2D5 /* TestingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingTableViewCell.swift; sourceTree = "<group>"; };
 		4C821182284094D800C7B2D5 /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
 		4C82118428409D9900C7B2D5 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		4C8BD5D6284AC4DF0045705F /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		4C8BD5D9284ACF040045705F /*  APIConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " APIConnectionViewController.swift"; sourceTree = "<group>"; };
+		4C8BD5DB284DB2DD0045705F /* APIConnectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConnectionViewModel.swift; sourceTree = "<group>"; };
 		4C9C68A82835FC5F007C39A5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4CA127EB28431E7E005CCF60 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		4CAE0763287D3A6500608927 /* SendDataBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDataBackViewController.swift; sourceTree = "<group>"; };
+		4CAE0765287D401400608927 /* SendDataBack2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDataBack2ViewController.swift; sourceTree = "<group>"; };
+		4CAE0767287D42F700608927 /* SendDataBack2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDataBack2TableViewCell.swift; sourceTree = "<group>"; };
 		4CC73F80283B4F88004A6EC1 /* SendDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDataViewController.swift; sourceTree = "<group>"; };
 		4CC9E3312844252D002CA36E /* SmartScreensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartScreensViewController.swift; sourceTree = "<group>"; };
 		4CC9E33328442C93002CA36E /* SmartScreens2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartScreens2ViewController.swift; sourceTree = "<group>"; };
+		4CDFDF762851204600A68A77 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		4CDFDF7828512DCE00A68A77 /* PopUpWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +119,24 @@
 			path = Carousel;
 			sourceTree = "<group>";
 		};
+		4C8BD5D8284ACE9A0045705F /* APIConnection */ = {
+			isa = PBXGroup;
+			children = (
+				4C8BD5D9284ACF040045705F /*  APIConnectionViewController.swift */,
+			);
+			path = APIConnection;
+			sourceTree = "<group>";
+		};
 		4C9C68A42835FADB007C39A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				4C9C68A72835FAFB007C39A5 /* Main */,
 				4CC73F7F283B4F64004A6EC1 /* SendData */,
+				4CAE0762287D39ED00608927 /* SendDataBackwards */,
 				4CC9E33028442054002CA36E /* SmartScreens */,
 				4C821181284094C500C7B2D5 /* Carousel */,
+				4C8BD5D8284ACE9A0045705F /* APIConnection */,
+				4CDFDF7528511F9D00A68A77 /* Modal */,
 				4C82117C28408D0600C7B2D5 /* Testing */,
 				4C526CA32835F0C600846004 /* LaunchScreen.storyboard */,
 			);
@@ -119,6 +146,7 @@
 		4C9C68A52835FAE2007C39A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4C8BD5D6284AC4DF0045705F /* Crypto.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -126,6 +154,7 @@
 		4C9C68A62835FAE9007C39A5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4C8BD5DB284DB2DD0045705F /* APIConnectionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -162,6 +191,16 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		4CAE0762287D39ED00608927 /* SendDataBackwards */ = {
+			isa = PBXGroup;
+			children = (
+				4CAE0763287D3A6500608927 /* SendDataBackViewController.swift */,
+				4CAE0765287D401400608927 /* SendDataBack2ViewController.swift */,
+				4CAE0767287D42F700608927 /* SendDataBack2TableViewCell.swift */,
+			);
+			path = SendDataBackwards;
+			sourceTree = "<group>";
+		};
 		4CC73F7F283B4F64004A6EC1 /* SendData */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +216,15 @@
 				4CC9E33328442C93002CA36E /* SmartScreens2ViewController.swift */,
 			);
 			path = SmartScreens;
+			sourceTree = "<group>";
+		};
+		4CDFDF7528511F9D00A68A77 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				4CDFDF762851204600A68A77 /* ModalViewController.swift */,
+				4CDFDF7828512DCE00A68A77 /* PopUpWindow.swift */,
+			);
+			path = Modal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,13 +298,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8BD5DA284ACF040045705F /*  APIConnectionViewController.swift in Sources */,
+				4CDFDF772851204600A68A77 /* ModalViewController.swift in Sources */,
+				4C8BD5D7284AC4DF0045705F /* Crypto.swift in Sources */,
 				4C9C68A92835FC5F007C39A5 /* MainViewController.swift in Sources */,
+				4CAE0766287D401400608927 /* SendDataBack2ViewController.swift in Sources */,
 				4CA127EC28431E7E005CCF60 /* MainTableViewCell.swift in Sources */,
 				4C526C992835F0C500846004 /* AppDelegate.swift in Sources */,
 				4C82118028408ED900C7B2D5 /* TestingTableViewCell.swift in Sources */,
 				4CC9E3322844252D002CA36E /* SmartScreensViewController.swift in Sources */,
+				4CDFDF7928512DCE00A68A77 /* PopUpWindow.swift in Sources */,
 				4CC9E33428442C93002CA36E /* SmartScreens2ViewController.swift in Sources */,
 				4C82118528409D9900C7B2D5 /* CarouselCollectionViewCell.swift in Sources */,
+				4C8BD5DC284DB2DD0045705F /* APIConnectionViewModel.swift in Sources */,
+				4CAE0768287D42F700608927 /* SendDataBack2TableViewCell.swift in Sources */,
+				4CAE0764287D3A6500608927 /* SendDataBackViewController.swift in Sources */,
 				4C821183284094D800C7B2D5 /* CarouselViewController.swift in Sources */,
 				4C82117E28408D1F00C7B2D5 /* TestingViewController.swift in Sources */,
 				4C526C9B2835F0C500846004 /* SceneDelegate.swift in Sources */,

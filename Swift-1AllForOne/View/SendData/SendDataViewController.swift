@@ -10,10 +10,14 @@ import UIKit
 //MARK: - 1 SendDataViewController
 class SendDataViewController: UIViewController {
 
+    let heightFeet = Measurement(value: 6 , unit: UnitLength.feet)
+    let locale = Locale.current
+
     
     //MARK: 1.1 Outlets
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var numberLabel: UILabel!
     
     
     //MARK: 1.2 Variables
@@ -24,6 +28,7 @@ class SendDataViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadViews()
+        jajaj()
     }
     
     
@@ -32,5 +37,15 @@ class SendDataViewController: UIViewController {
     func loadViews(){
         titleLabel.text        = paramTitle
         descriptionLabel.text  = "Pantalla donde se recibe el siguiente parametro por pantalla: \(paramTitle!)"
+//        numberLabel.text = heightFeet
+    }
+    
+    func jajaj() {
+        if locale.usesMetricSystem {
+            print("JAJAJ")
+        } else {
+            print("JOJOJO")
+            print("")
+        }
     }
 }
