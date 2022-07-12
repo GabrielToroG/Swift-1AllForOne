@@ -248,7 +248,7 @@
                     <navigationItem key="navigationItem" id="rD9-jY-mZj"/>
                     <connections>
                         <outlet property="colorTableView" destination="5jZ-u2-ayi" id="ix7-AM-gdK"/>
-                        <segue destination="fb6-qz-58o" kind="show" identifier="goToSendData2FromSendData" id="zUn-Rh-UIV"/>
+                        <segue destination="fb6-qz-58o" kind="show" identifier="goToRecieveColorFromSendData" id="zUn-Rh-UIV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h3m-e9-2u9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

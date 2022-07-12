@@ -76,6 +76,6 @@ extension SendDataViewController: UITableViewDelegate {
         saveColor.text = colors[indexPath.row].text
         
         // Se genera la conexión con el siguiente vc, mediante el segue
-        performSegue(withIdentifier: "goToSendData2FromSendData", sender: self)
+        performSegue(withIdentifier: "goToRecieveColorFromSendData", sender: self)
     }
 }
