@@ -286,7 +286,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="fur-qp-SLu" kind="popoverPresentation" identifier="goToSendDataBack2FromSendDataBack" popoverAnchorView="bTd-3n-Nzq" id="zOq-at-Ag9">
+                                    <segue destination="fur-qp-SLu" kind="popoverPresentation" identifier="goToSendColorFromSendDataBack" popoverAnchorView="bTd-3n-Nzq" id="zOq-at-Ag9">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
                                 </connections>

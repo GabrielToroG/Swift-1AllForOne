@@ -21,8 +21,8 @@ class SendDataBackViewController: UIViewController {
 
     // MARK: - Segue handlers
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? SendColorViewController {
-            vc.delegate = self
+        if let sendColorVC = segue.destination as? SendColorViewController {
+            sendColorVC.delegate = self
         }
     }
 }
