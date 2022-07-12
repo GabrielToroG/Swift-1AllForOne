@@ -48,7 +48,7 @@ class MainViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToSendDataFromMain"{          //Se identifica el segue
             if let destination = segue.destination as? SendDataViewController{
-                destination.paramTitle = cellsArray[0]["title"]    //Se manda la información
+//                destination.paramTitle = cellsArray[0]["title"]    //Se manda la información
             }
         }
     }
@@ -57,12 +57,12 @@ class MainViewController: UIViewController {
 
 //MARK: - 2 Extension: DataSource
 extension MainViewController: UITableViewDataSource{
-    //A. Función que establece cuantas celdas tendrá la tabla
+    // A. Función que establece cuantas celdas tendrá la tabla
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cellsArray.count
     }
     
-    //B. Función que establece cual es el contenido de cada una de las celdas
+    // B. Función que establece cual es el contenido de cada una de las celdas
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = navegationTableView.dequeueReusableCell(withIdentifier: "MainTableViewCell", for: indexPath) as! MainTableViewCell
         cell.tableName.text = cellsArray[indexPath.row]["title"]!
@@ -75,7 +75,7 @@ extension MainViewController: UITableViewDataSource{
 
 //MARK: - 3 Extension: Delegate
 extension MainViewController: UITableViewDelegate{
-    //A. Función que establece la acción que ocurrirá al hacer clic en una celda
+    // A. Función que establece la acción que ocurrirá al hacer clic en una celda
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)    //Se des-selecciona la celda
         

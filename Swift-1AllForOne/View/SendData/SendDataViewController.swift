@@ -7,45 +7,75 @@
 
 import UIKit
 
-//MARK: - 1 SendDataViewController
+
 class SendDataViewController: UIViewController {
 
-    let heightFeet = Measurement(value: 6 , unit: UnitLength.feet)
-    let locale = Locale.current
+    // MARK: - Outlets
+    @IBOutlet weak var colorTableView: UITableView!
+ 
+    
+    // MARK: - Variables
+    private var saveColor: ColorStruct = ColorStruct()
+    private let colors: [ColorStruct] = [
+            ColorStruct(color: .systemRed, text: "Rojo"),
+            ColorStruct(color: .systemGreen, text: "Verde"),
+            ColorStruct(color: .systemYellow, text: "Amarrillo"),
+            ColorStruct(color: .systemOrange, text: "Naranjo")
+    ]
 
     
-    //MARK: 1.1 Outlets
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var numberLabel: UILabel!
-    
-    
-    //MARK: 1.2 Variables
-    var paramTitle: String?  //Variable que se recibirá por parámetros
-    
-    
-    //MARK: 1.3 Lifecycle
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         loadViews()
-        jajaj()
     }
     
     
-    //MARK: 1.5 UI Functions
-    //A. Función que carga las vistas
-    func loadViews(){
-        titleLabel.text        = paramTitle
-        descriptionLabel.text  = "Pantalla donde se recibe el siguiente parametro por pantalla: \(paramTitle!)"
-//        numberLabel.text = heightFeet
+    // MARK: - UI Functions
+    /// Función que hace toda la vista se vea como se tienen que ver
+    private func loadViews() {
+        colorTableView.dataSource = self
+        colorTableView.delegate = self
     }
     
-    func jajaj() {
-        if locale.usesMetricSystem {
-            print("JAJAJ")
-        } else {
-            print("JOJOJO")
-            print("")
+    
+    // MARK: - Segue handlers
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? RecieveColorViewController{
+            destination.paramColor = saveColor.color
+            destination.paramText = saveColor.text
         }
+    }
+}
+
+
+
+// MARK: Extensions
+extension SendDataViewController: UITableViewDataSource {
+    // 1. Función que establece cuantas celdas tendrá la tabla
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return colors.count
+    }
+    
+    // 2. Función que establece cual es el contenido de cada una de las celdas
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = colorTableView.dequeueReusableCell(withIdentifier: "SendDataTableViewCell", for: indexPath) as! SendDataTableViewCell
+        cell.colorView.backgroundColor = colors[indexPath.row].color
+        cell.colorLabel.text = colors[indexPath.row].text
+        return cell
+    }
+}
+
+extension SendDataViewController: UITableViewDelegate {
+    // 1. Función que establece la acción que ocurrirá al hacer clic en una celda
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)    // Se des-selecciona la celda
+        
+        // A continuación, se respalda la data, para luego enviarla al siguiente vc
+        saveColor.color = colors[indexPath.row].color
+        saveColor.text = colors[indexPath.row].text
+        
+        // Se genera la conexión con el siguiente vc, mediante el segue
+        performSegue(withIdentifier: "goToSendData2FromSendData", sender: self)
     }
 }

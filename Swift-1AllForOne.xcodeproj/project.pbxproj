@@ -21,6 +21,9 @@
 		4C8BD5DC284DB2DD0045705F /* APIConnectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8BD5DB284DB2DD0045705F /* APIConnectionViewModel.swift */; };
 		4C9C68A92835FC5F007C39A5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9C68A82835FC5F007C39A5 /* MainViewController.swift */; };
 		4CA127EC28431E7E005CCF60 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA127EB28431E7E005CCF60 /* MainTableViewCell.swift */; };
+		4CA791F9287D69AD0078EF7A /* SendDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA791F8287D69AD0078EF7A /* SendDataTableViewCell.swift */; };
+		4CA791FB287D6C5A0078EF7A /* RecieveColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA791FA287D6C5A0078EF7A /* RecieveColorViewController.swift */; };
+		4CA791FD287D6D2D0078EF7A /* ColorStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA791FC287D6D2D0078EF7A /* ColorStruct.swift */; };
 		4CAE0764287D3A6500608927 /* SendDataBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE0763287D3A6500608927 /* SendDataBackViewController.swift */; };
 		4CAE0766287D401400608927 /* SendDataBack2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE0765287D401400608927 /* SendDataBack2ViewController.swift */; };
 		4CAE0768287D42F700608927 /* SendDataBack2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE0767287D42F700608927 /* SendDataBack2TableViewCell.swift */; };
@@ -48,6 +51,9 @@
 		4C8BD5DB284DB2DD0045705F /* APIConnectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConnectionViewModel.swift; sourceTree = "<group>"; };
 		4C9C68A82835FC5F007C39A5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4CA127EB28431E7E005CCF60 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		4CA791F8287D69AD0078EF7A /* SendDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDataTableViewCell.swift; sourceTree = "<group>"; };
+		4CA791FA287D6C5A0078EF7A /* RecieveColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieveColorViewController.swift; sourceTree = "<group>"; };
+		4CA791FC287D6D2D0078EF7A /* ColorStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorStruct.swift; sourceTree = "<group>"; };
 		4CAE0763287D3A6500608927 /* SendDataBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDataBackViewController.swift; sourceTree = "<group>"; };
 		4CAE0765287D401400608927 /* SendDataBack2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDataBack2ViewController.swift; sourceTree = "<group>"; };
 		4CAE0767287D42F700608927 /* SendDataBack2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDataBack2TableViewCell.swift; sourceTree = "<group>"; };
@@ -179,6 +185,7 @@
 		4CAD25392836932D002B447A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				4CA791FC287D6D2D0078EF7A /* ColorStruct.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -205,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				4CC73F80283B4F88004A6EC1 /* SendDataViewController.swift */,
+				4CA791F8287D69AD0078EF7A /* SendDataTableViewCell.swift */,
+				4CA791FA287D6C5A0078EF7A /* RecieveColorViewController.swift */,
 			);
 			path = SendData;
 			sourceTree = "<group>";
@@ -298,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA791FD287D6D2D0078EF7A /* ColorStruct.swift in Sources */,
 				4C8BD5DA284ACF040045705F /*  APIConnectionViewController.swift in Sources */,
 				4CDFDF772851204600A68A77 /* ModalViewController.swift in Sources */,
 				4C8BD5D7284AC4DF0045705F /* Crypto.swift in Sources */,
@@ -307,8 +317,10 @@
 				4C526C992835F0C500846004 /* AppDelegate.swift in Sources */,
 				4C82118028408ED900C7B2D5 /* TestingTableViewCell.swift in Sources */,
 				4CC9E3322844252D002CA36E /* SmartScreensViewController.swift in Sources */,
+				4CA791F9287D69AD0078EF7A /* SendDataTableViewCell.swift in Sources */,
 				4CDFDF7928512DCE00A68A77 /* PopUpWindow.swift in Sources */,
 				4CC9E33428442C93002CA36E /* SmartScreens2ViewController.swift in Sources */,
+				4CA791FB287D6C5A0078EF7A /* RecieveColorViewController.swift in Sources */,
 				4C82118528409D9900C7B2D5 /* CarouselCollectionViewCell.swift in Sources */,
 				4C8BD5DC284DB2DD0045705F /* APIConnectionViewModel.swift in Sources */,
 				4CAE0768287D42F700608927 /* SendDataBack2TableViewCell.swift in Sources */,
