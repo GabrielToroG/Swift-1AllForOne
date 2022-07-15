@@ -20,6 +20,7 @@ class MainViewController: UIViewController {
     var cellsArray = [
         ["title": "Mandar información hacia adelante", "icon": "ic_main_send_data"],
         ["title": "Mandar información hacia atrás", "icon": "ic_main_send_data"],
+        ["title": "Formulario con desplegables", "icon": "ic_main_send_data"],
         ["title": "Pantallas inteligentes", "icon": "ic_main_smart_screens"],
         ["title": "Carrusel", "icon": "ic_main_carousel"],
         ["title": "Conexión API", "icon": "ic_main_api"],
@@ -40,17 +41,6 @@ class MainViewController: UIViewController {
         navegationTableView.rowHeight = 44      //Fija la altura de la celda a la de default
         navegationTableView.dataSource = self   //Indica los elementos que tendrá la tabla
         navegationTableView.delegate = self     //Indica las acciones de cada celda
-    }
-    
-    
-    //MARK: 1.6 Segue handlers
-    //A. Función que manda datos desde un ViewController a otro ViewController mediante el segue
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToSendDataFromMain"{          //Se identifica el segue
-            if let destination = segue.destination as? SendDataViewController{
-//                destination.paramTitle = cellsArray[0]["title"]    //Se manda la información
-            }
-        }
     }
 }
 
@@ -86,7 +76,7 @@ extension MainViewController: UITableViewDelegate{
         case 1:
             performSegue(withIdentifier: "goToSendDataBackFromMain", sender: self)
         case 2:
-            performSegue(withIdentifier: "goToSmartScreensFromMain", sender: self)
+            performSegue(withIdentifier: "goToFormFromMain", sender: self)
         case 3:
             performSegue(withIdentifier: "goToCarouselFromMain", sender: self)
         case 4:
